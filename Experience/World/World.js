@@ -11,12 +11,12 @@ export default class World{
         this.canvas = this.experience.canvas;
         this.camera = this.experience.camera;
         this.resources = this.experience.resources;
-        // this.resources.on("ready", ()=>{
-        //     this.environment = new Environment();
-        //     this.room = new Room();
-        //     console.log("created room");
-        // })
-        this.room = new Room();
+        this.resources.on("ready", ()=>{
+            this.environment = new Environment();
+            this.room = new Room();
+            console.log("created room");
+        })
+        //this.room = new Room();
     }
     
     resize(){

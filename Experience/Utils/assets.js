@@ -2,7 +2,7 @@ export default [
     {
         name: "room",
         type: "glbModel",
-        path: "/models/TestRoom.glb"
+        path: "/models/FinalTestRoom.glb"
     },
     {
         name: "screen",

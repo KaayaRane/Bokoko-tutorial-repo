@@ -4,7 +4,7 @@ export default class Sizes extends EventEmitter{
     constructor(){
         super();
         this.width = window.innerWidth; // width of window
-        this.height = window.innerHeigth; // height of window (canvas might be better?)
+        this.height = window.innerHeight; // height of window (canvas might be better?)
         this.aspect = this.width/this.height; // for our camera
         this.pixelRatio = Math.min(window.devicePixelRatio, 2); // want to find min window device pixel ratio
 
