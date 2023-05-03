@@ -15,6 +15,10 @@ export default class Room{
     }
 
     setModel(){
+        // this.actualRoom.children.foreach(child=>{
+        //     child.castShadow = true;
+        //     child.receiveShadow = true;
+        // })
         this.scene.add(this.actualRoom);
         this.actualRoom.scale.set(0.225, 0.225, 0.225);
         //this.actualRoom.translateY(0.8);
