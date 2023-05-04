@@ -18,8 +18,6 @@ export default class Room{
         
         this.setModel();
         this.onMouseMove();
-
-
     }
 
     setModel(){

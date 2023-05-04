@@ -21,23 +21,23 @@ export default class Experience{
         this.renderer = new Renderer();
         this.resources = new Resources(assets);
         this.world = new World();
+        this.sizes.on("resize", ()=>{
+            this.resize();
+        })
         this.time.on("update", ()=> {
             this.update();
         });
-        this.time.on("resize", ()=>{
-            this.resize();
-        })
-    }
-
-    update(){
-        this.camera.update();
-        this.renderer.update();
-        this.world.update();
     }
 
     resize(){
         this.camera.resize();
         this.renderer.resize();
         this.world.resize();
+    }
+
+    update(){
+        this.camera.update();
+        this.renderer.update();
+        this.world.update();
     }
 }
